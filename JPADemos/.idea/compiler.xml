@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="jpa_day03_manyToMany" />
+        <module name="jpa_day03" />
+        <module name="jpa_day02" />
+        <module name="jpa_day01" />
+        <module name="jpa_day03_oneToMany" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spring_boot" target="1.5" />
+      <module name="springBoot_quick" target="1.8" />
+      <module name="springboot_quick3" target="1.5" />
+      <module name="test" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="springBoot_quick" options="-parameters" />
+    </option>
+  </component>
+</project>
