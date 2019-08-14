@@ -5,7 +5,7 @@ import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.QueueingConsumer;
 import com.zhou.utils.ConnectionUtil;
 
-public class Recv1 {
+public class Recv_simple {
     private final static String QUEUE_NAME = "q_test_01";
 
     public static void main(String[] args) throws Exception {

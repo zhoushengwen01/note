@@ -1,27 +1,29 @@
-package com.zhou.simplemq.producer;
+package com.zhou.subscription.producer;
 
+import com.rabbitmq.client.AMQP;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.zhou.utils.ConnectionUtil;
 
 import java.io.IOException;
 
-public class Send {
-    private final static String QUEUE_NAME = "q_test_01";
+public class Send_subscription {
+    private final static String EXCHANGE_NAME = "test_exchange_fanout";
 
     public static void main(String[] args) throws IOException {
         Connection connection = ConnectionUtil.getConnection();
-
         Channel channel = connection.createChannel();
 
-        channel.queueDeclare(QUEUE_NAME, false, false, false, null);
-        String message = "hello world";
-        channel.basicPublish("", QUEUE_NAME, null, message.getBytes());
+        // 声明exchange
+        AMQP.Exchange.DeclareOk fanout = channel.exchangeDeclare(EXCHANGE_NAME, "fanout");
+
+        // 消息内容
+        String message = "Hello World!";
+        channel.basicPublish(EXCHANGE_NAME, "", null, message.getBytes());
         System.out.println(" [x] Sent '" + message + "'");
-        //关闭通道和连接
+
         channel.close();
         connection.close();
     }
-
 
 }
