@@ -13,6 +13,21 @@
         <module>rabbitMQ_consumer</module>
     </modules>
 
+    <!--<dependencies>-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring‐boot‐starter‐amqp</artifactId>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring‐boot‐starter‐test</artifactId>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring‐boot‐starter‐logging</artifactId>-->
+        <!--</dependency>-->
+    <!--</dependencies>-->
+
 
 
 </project>
