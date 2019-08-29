@@ -5,6 +5,8 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
 import org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfigurerAdapter;
 
+
+//资源服务器开启
 @Configuration
 @EnableResourceServer
 public class MyResourceServerConfigurerAdapter extends ResourceServerConfigurerAdapter {

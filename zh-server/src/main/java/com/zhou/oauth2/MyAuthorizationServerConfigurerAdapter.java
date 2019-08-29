@@ -16,6 +16,7 @@ import org.springframework.security.oauth2.provider.token.store.JwtAccessTokenCo
 
 import javax.sql.DataSource;
 
+//OAuth2认证授权服务配置
 @Configuration
 @EnableAuthorizationServer
 public class MyAuthorizationServerConfigurerAdapter extends AuthorizationServerConfigurerAdapter {

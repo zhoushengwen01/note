@@ -9,6 +9,8 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 
+
+//Application启动类，Oauth2Config配置
 @Configuration
 @EnableWebSecurity
 public class WebsecurityConfig extends WebSecurityConfigurerAdapter {
@@ -52,5 +54,4 @@ public class WebsecurityConfig extends WebSecurityConfigurerAdapter {
 	public AuthenticationManager authenticationManagerBean() throws Exception {
 		return super.authenticationManagerBean();
 	}
-
 }
